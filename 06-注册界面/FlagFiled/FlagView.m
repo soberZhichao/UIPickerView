@@ -33,7 +33,7 @@
     // 给控件赋值
     _nameView.text = flag.name;
     
-    _iconView.image = flag.icon1;
+    _iconView.image = flag.icon;
     
 }
 @end

@@ -21,6 +21,13 @@
 
 @implementation FlagField
 
+
+// 初始化文字的方法
+- (void)initialText
+{
+    [self pickerView:nil didSelectRow:0 inComponent:0];
+}
+
 - (NSMutableArray *)flags
 {
     if (_flags == nil) {
@@ -63,6 +70,8 @@
 // 初始化操作
 - (void)setUp
 {
+    
+    
     
     // 创建国旗键盘
     UIPickerView *pickerView = [[UIPickerView alloc] init];
@@ -110,6 +119,7 @@
 }
 
 // 选中某一行的时候调用
+// 给文本框赋值
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
      Flag *flag = self.flags[row];

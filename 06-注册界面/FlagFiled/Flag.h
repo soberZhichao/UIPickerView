@@ -17,7 +17,7 @@
 // 保存图片名称
 //@property (nonatomic, strong) NSString *icon;
 
-@property (nonatomic, strong) UIImage *icon1;
+@property (nonatomic, strong) UIImage *icon;
 
 + (instancetype)flagWithDict:(NSDictionary *)dict;
 

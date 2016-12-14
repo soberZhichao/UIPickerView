@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700092551B9C231A008EA220 /* BirthdayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 700092541B9C231A008EA220 /* BirthdayField.m */; };
+		700092591B9C2742008EA220 /* CityField.m in Sources */ = {isa = PBXBuildFile; fileRef = 700092581B9C2742008EA220 /* CityField.m */; };
+		7000925B1B9C2909008EA220 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7000925A1B9C2909008EA220 /* provinces.plist */; };
+		7000925E1B9C29AC008EA220 /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = 7000925D1B9C29AC008EA220 /* Province.m */; };
 		70AF9DA51B9BE8AF0096D826 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AF9DA41B9BE8AF0096D826 /* main.m */; };
 		70AF9DA81B9BE8AF0096D826 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AF9DA71B9BE8AF0096D826 /* AppDelegate.m */; };
 		70AF9DAB1B9BE8AF0096D826 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AF9DAA1B9BE8AF0096D826 /* ViewController.m */; };
@@ -46,6 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		700092531B9C231A008EA220 /* BirthdayField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayField.h; sourceTree = "<group>"; };
+		700092541B9C231A008EA220 /* BirthdayField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayField.m; sourceTree = "<group>"; };
+		700092571B9C2742008EA220 /* CityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityField.h; sourceTree = "<group>"; };
+		700092581B9C2742008EA220 /* CityField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityField.m; sourceTree = "<group>"; };
+		7000925A1B9C2909008EA220 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		7000925C1B9C29AC008EA220 /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		7000925D1B9C29AC008EA220 /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
 		70AF9D9F1B9BE8AF0096D826 /* 06-注册界面.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-注册界面.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AF9DA31B9BE8AF0096D826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70AF9DA41B9BE8AF0096D826 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,6 +112,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		700092521B9C2308008EA220 /* BirthdayField */ = {
+			isa = PBXGroup;
+			children = (
+				700092531B9C231A008EA220 /* BirthdayField.h */,
+				700092541B9C231A008EA220 /* BirthdayField.m */,
+			);
+			path = BirthdayField;
+			sourceTree = "<group>";
+		};
+		700092561B9C2736008EA220 /* CityField */ = {
+			isa = PBXGroup;
+			children = (
+				7000925A1B9C2909008EA220 /* provinces.plist */,
+				700092571B9C2742008EA220 /* CityField.h */,
+				700092581B9C2742008EA220 /* CityField.m */,
+				7000925C1B9C29AC008EA220 /* Province.h */,
+				7000925D1B9C29AC008EA220 /* Province.m */,
+			);
+			path = CityField;
+			sourceTree = "<group>";
+		};
 		70AF9D961B9BE8AF0096D826 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +154,8 @@
 		70AF9DA11B9BE8AF0096D826 /* 06-注册界面 */ = {
 			isa = PBXGroup;
 			children = (
+				700092561B9C2736008EA220 /* CityField */,
+				700092521B9C2308008EA220 /* BirthdayField */,
 				70AF9DC91B9BEA0B0096D826 /* FlagFiled */,
 				70AF9DA61B9BE8AF0096D826 /* AppDelegate.h */,
 				70AF9DA71B9BE8AF0096D826 /* AppDelegate.m */,
@@ -280,6 +314,7 @@
 			files = (
 				70AF9DAE1B9BE8AF0096D826 /* Main.storyboard in Resources */,
 				70AF9DE21B9BEC860096D826 /* hanguo.gif in Resources */,
+				7000925B1B9C2909008EA220 /* provinces.plist in Resources */,
 				70AF9DB31B9BE8AF0096D826 /* LaunchScreen.xib in Resources */,
 				70AF9DE31B9BEC860096D826 /* helan.gif in Resources */,
 				70AF9DE91B9BEC860096D826 /* ydl.gif in Resources */,
@@ -317,8 +352,11 @@
 				70AF9DF11B9BEF1F0096D826 /* FlagView.m in Sources */,
 				70AF9DEE1B9BED580096D826 /* Flag.m in Sources */,
 				70AF9DCC1B9BEA2C0096D826 /* FlagField.m in Sources */,
+				700092591B9C2742008EA220 /* CityField.m in Sources */,
+				7000925E1B9C29AC008EA220 /* Province.m in Sources */,
 				70AF9DAB1B9BE8AF0096D826 /* ViewController.m in Sources */,
 				70AF9DA81B9BE8AF0096D826 /* AppDelegate.m in Sources */,
+				700092551B9C231A008EA220 /* BirthdayField.m in Sources */,
 				70AF9DA51B9BE8AF0096D826 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +554,7 @@
 				70AF9DC41B9BE8AF0096D826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70AF9DC51B9BE8AF0096D826 /* Build configuration list for PBXNativeTarget "06-注册界面Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +563,7 @@
 				70AF9DC71B9BE8AF0096D826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
